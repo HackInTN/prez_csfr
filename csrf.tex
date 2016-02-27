@@ -1,0 +1,65 @@
+\documentclass{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+% \usepackage{forloop}
+\usepackage{multicol}
+\usepackage{animate}
+\usepackage{default}
+\usepackage{listing}
+
+\usepackage[list=true]{subcaption}
+\captionsetup{compatibility=false}
+\usepackage{etex}
+
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\usepackage{listings}
+% \usepackage{polyglossia}
+% \usepackage{listings}
+% \usepackage{ulem}
+% \usepackage{multicol}
+
+% \setbeamertemplate{navigation symbols}{}
+% \setbeamertemplate{sidebar right}{}
+% \setbeamertemplate{footline}{\hfill\insertframenumber{} | \inserttotalframenumber}
+
+
+% \newcommand{\myline}{\par
+%     \kern0.5pt
+%     \hrule height 0.8pt
+%     \kern0.5pt
+% }
+
+\usecolortheme{cormorant}
+\useoutertheme{infolines}
+
+\lstset{language=HTML,
+                basicstyle=\ttfamily,
+                keywordstyle=\color{cyan}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+}                
+
+\title[failles csrf]{H4ck 1n TN}
+\subtitle{Les vulnérabilités CSRF}
+\author[H4ck1nTN]{Olivier Dautricourt}
+\date{\today}
+\logo{\includegraphics[width=1.3cm]{logo.png}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame} 
+
+
+\input{intro}
+\input{tech}
+\input{examples}
+\input{protect}
+\input{chall}
+\end{document}

